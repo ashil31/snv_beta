@@ -164,10 +164,16 @@ body {
 }
 @media (max-width:1158px) {
     .about .text_details {
+        gap: 140px;
+    }
+    .about .text_details {
         gap: 60px;
     }
 }
 @media (max-width:758px) {
+    .about .text_details {
+        gap: 140px;
+    }
     .home .logo{
         position: absolute;
         left: 15px;
@@ -187,7 +193,7 @@ body {
 
 @media (max-width:448px) {
     .about .text_details {
-        gap: 70px;
+        gap: 140px;
     }
     .home .title_text_bottom {
         font-size: 1.2rem;
