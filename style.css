@@ -99,7 +99,6 @@ body {
     z-index: 1;
     color: white;
     text-align: center;
-    gap: 90px;
 }
 
 .about .text_details .text_top {
@@ -110,15 +109,6 @@ body {
     text-align: center;
 }
 
-.about .text_details .footer {
-    color: rgba(255, 255, 255, 0.47);
-    font-size: .7rem;
-    font-weight: 500;
-    text-align: center;
-}
-.about .text_details .footer ul {
-    list-style-type: none;
-}
 .about .text_details .text_top ul{
     list-style-type: none;
 }
@@ -127,7 +117,7 @@ body {
     padding-bottom: 8px;
 }
 .about .text_details .text_center {
-    padding-top: 50px;
+    padding-top: 140px;
     letter-spacing: .2rem;
     font-size: 1rem;
     font-weight: 500;
@@ -149,6 +139,7 @@ body {
 }
 
 .about .text_details .text_bottom {
+    padding-top: 70px;
     letter-spacing: .2rem;
     font-size: 1rem;
     font-weight: 500;
@@ -162,18 +153,61 @@ body {
     font-family: 'AbhayaLibre';
     font-size: 1rem;
 }
-@media (max-width:1158px) {
-    .about .text_details {
-        gap: 140px;
-    }
-    .about .text_details {
-        gap: 60px;
+.about .text_details .footer {
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.47);
+    font-size: .7rem;
+    font-weight: 500;
+    text-align: center;
+}
+.about .text_details .footer ul {
+    list-style-type: none;
+}
+@media (max-height:1258px) {
+    .about {
+        height: 60vh;
     }
 }
-@media (max-width:758px) {
-    .about .text_details {
-        gap: 140px;
+@media (max-height:1088px) {
+    .about {
+        height: 70vh;
     }
+}
+@media (max-height:958px) {
+    .about {
+        height: 80vh;
+    }
+    .about .text_details .text_top{
+        padding-top: 100px;
+    }
+    .about .text_details .text_center{
+        padding-top: 140px;
+    }
+    .about .text_details .text_bottom{
+        padding-top: 100px;
+    }
+}
+@media (max-height:868px) {
+    .about {
+        height: 90vh;
+    }
+}
+@media (max-height:778px) {
+    .about {
+        height: 100vh;
+    }
+    .about .text_details .text_top{
+        padding-top: 100px;
+    }
+    .about .text_details .text_center{
+        padding-top: 100px;
+    }
+    .about .text_details .text_bottom{
+        padding-top: 100px;
+    }
+}
+
+@media (max-width:758px) {
     .home .logo{
         position: absolute;
         left: 15px;
@@ -192,9 +226,6 @@ body {
 }
 
 @media (max-width:448px) {
-    .about .text_details {
-        gap: 140px;
-    }
     .home .title_text_bottom {
         font-size: 1.2rem;
     }
