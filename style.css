@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./Images/Frame\ 1.png');
+}
+
+.home .logo{
+    position: absolute;
+    left: 15px;
+    top: -14px;
+}
+
+.home .logo img {
+    width: 140px;
+    height: 105px;
+}
+
+.home .title_text {
+    position: absolute;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.home .title_text_bottom{
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-end;
+    z-index: 1;
+    color: white;
+    letter-spacing: .5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.home .title_text_bottom .btm_text1 {
+    font-weight: 400;
+    letter-spacing: .6rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.home .title_text_bottom .btm_text2 {
+    font-weight: 400;
+    letter-spacing: .4rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+.about {
+    position: relative;
+    margin-top: -4px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./Images/Frame\ 2.png');
+}
+
+.about .text_details {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    gap: 90px;
+}
+
+.about .text_details .text_top {
+    padding-top: 70px;
+    letter-spacing: .2rem;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about .text_details .footer {
+    color: rgba(255, 255, 255, 0.47);
+    font-size: .7rem;
+    font-weight: 500;
+    text-align: center;
+}
+.about .text_details .footer ul {
+    list-style-type: none;
+}
+.about .text_details .text_top ul{
+    list-style-type: none;
+}
+.about .text_details .text_top ul li{
+    text-align: center;
+    padding-bottom: 8px;
+}
+.about .text_details .text_center {
+    padding-top: 50px;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about .text_details .text_center ul{
+    list-style-type: none;
+}
+.about .text_details .text_center ul li{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.about .text_details .text_center ul .text_abhaya {
+    font-family: 'AbhayaLibre' ;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.about .text_details .text_bottom {
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.about .text_details .text_bottom ul{
+    list-style-type: none;
+}
+
+.about .text_details .text_bottom ul .text_abhaya2 {
+    font-family: 'AbhayaLibre';
+    font-size: 1rem;
+}
+@media (max-width:1158px) {
+    .about .text_details {
+        gap: 60px;
+    }
+}
+@media (max-width:758px) {
+    .home .logo{
+        position: absolute;
+        left: 15px;
+        top: -14px;
+    }
+    .home .logo img {
+        width: 120px;
+        height: 90px;
+    }
+    
+    .home .title_text {
+        padding-top: 100px;
+        letter-spacing: .5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:448px) {
+    .about .text_details {
+        gap: 70px;
+    }
+    .home .title_text_bottom {
+        font-size: 1.2rem;
+    }
+    .about .text_details .text_top{
+        font-size: .7rem;
+    }
+    .about .text_details .text_center{
+        font-size: .7rem;
+    }
+    .about .text_details .text_bottom{
+        font-size: .7rem;
+    }
+    .about .text_details .footer {
+        font-size: .6rem;
+    }
+}
