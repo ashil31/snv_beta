@@ -92,7 +92,7 @@ body {
     position: relative;
     margin-top: -4px;
     width: 100vw;
-    height: 120vh;
+    height: 110vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -285,7 +285,7 @@ body {
 }
 @media (max-width:758px) {
     .about {
-        height: 130vh;
+        height: 100vh;
     }
     .home .logo {
         position: absolute;
@@ -304,8 +304,16 @@ body {
         font-size: 1rem;
     }
 }
+@media (max-width:568px) {
+    .about {
+        height: 110vh;
+    }
+}
 
 @media (max-width:448px) {
+    .about {
+        height: 95vh;
+    }
     .home .title_text_bottom {
         font-size: 1.2rem;
     }
